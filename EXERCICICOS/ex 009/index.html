@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html</title>
+</head>
+<body>
+    <h2>Imagens Dinamicas</h2>
+    <p>Tente abrir essas imagens em varios dispositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem fexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a colocar um audio em html</p>
+    <audio preload="auto" autocontrols controls loop>
+        <source src="midia/alarme.lnk" type="audio/mpeg">
+        <p>infelismente seu navegador nao conseguiu reproduzir seu audio</p>
+    </audio>
+</body>
+</html>
